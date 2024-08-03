@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as mp
- 
+import numpy as np
+
 mp.rcParams.update({'font.size': 15}) # must set in top
 
 # data to be plotted
@@ -26,15 +27,16 @@ data = [
         ["Semaphore Give\nTime (Group 3)", 1742, 1428, 1115]]
  
 # form dataframe from data
-df = pd.DataFrame(data, columns=["Benchmark", 
-                                 "240 Mhz", 
-                                 "160 Mhz",
-                                 "80 Mhz",
+df = pd.DataFrame(data, columns=["Benchmarks Divided by Group", 
+                                 "CPU 240 Mhz", 
+                                 "CPU 160 Mhz",
+                                 "CPU 80 Mhz",
                                 ])
  
 # plot multiple columns such as population and year from dataframe
-df.plot(x="Benchmark", y=["240 Mhz", "160 Mhz", "80 Mhz"],
-        kind="bar", figsize=(10, 10), rot =0)
+df.plot(x="Benchmarks Divided by Group", y=["CPU 240 Mhz", "CPU 160 Mhz", "CPU 80 Mhz"],
+        kind="bar", figsize=(10, 10), rot =0, yticks=np.arange(0, 2100, 100))
+mp.ylabel("Clock Cycles")
 
 # display plot
 mp.show()
