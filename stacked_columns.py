@@ -11,9 +11,9 @@ data = [["Switch from ISR \nback to interrupted \nthread (group 1)", 1144, 830, 
  
 # form dataframe from data
 df = pd.DataFrame(data, columns=["Benchmark", 
-                                 "240 Mhz", 
-                                 "160 Mhz",
-                                 "80 Mhz",
+                                 "CPU 240 Mhz", 
+                                 "CPU 160 Mhz",
+                                 "CPU 80 Mhz",
                                 ])
  
 # plot multiple columns such as population and year from dataframe
