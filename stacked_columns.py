@@ -2,12 +2,12 @@ import pandas as pd
 import matplotlib.pyplot as mp
  
 # data to be plotted
-data = [["Average thread context \nswitch using \nyield (group 1)", 531, 531, 531],
-        ["Average thread context \nswitch using \nyield  (group 2)", 836, 836, 836],
-        ["Average thread context \nswitch using \nyield  (group 3)", 544, 544, 544],
-        ["Average context switch \ntime between \nthreads (group 1)", 569, 569, 569],
-        ["Average context switch \ntime between \nthreads ( group 2)", 836, 836, 836],
-        ["Average context switch \ntime between \nthreads ( group 2)", 565, 565, 565]]
+data = [["Switch from ISR \nback to interrupted \nthread (group 1)", 1144, 830, 531],
+        ["Switch from ISR \nback to interrupted \nthread (group 2)", 1144, 830, 531],
+        ["Switch from ISR \nback to interrupted \nthread (group 3)", 1144, 830, 531],
+        ["Time from ISR to \nexecuting a different \nthread (group 1)", 451, 451, 451],
+        ["Time from ISR to \nexecuting a different \nthread (group 2)", 451, 451, 451],
+        ["Time from ISR to \nexecuting a different \nthread (group 3)", 451, 451, 451]]
  
 # form dataframe from data
 df = pd.DataFrame(data, columns=["Benchmark", 
