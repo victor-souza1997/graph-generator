@@ -1,0 +1,47 @@
+==> LatencyTest_Option1_160.txt <==
+Average semaphore signal time                               :     135 cycles ,      843 ns
+Average semaphore test time                                 :      55 cycles ,      347 ns
+Semaphore take time (context switch)                        :     720 cycles ,     4500 ns
+Semaphore give time (context switch)                        :    1425 cycles ,     8906 ns
+==> LatencyTest_Option1_240.txt <==
+Average semaphore signal time                               :     135 cycles ,      562 ns
+Average semaphore test time                                 :      55 cycles ,      233 ns
+Semaphore take time (context switch)                        :     720 cycles ,     3000 ns
+Semaphore give time (context switch)                        :    1739 cycles ,     7245 ns
+==> LatencyTest_Option1_80.txt <==
+Average semaphore signal time                               :     135 cycles ,     1687 ns
+Average semaphore test time                                 :      55 cycles ,      691 ns
+Semaphore take time (context switch)                        :     720 cycles ,     9000 ns
+Semaphore give time (context switch)                        :    1112 cycles ,    13900 ns
+
+==> LatencyTest_Option2_160.txt <==
+Average semaphore signal time                               :     148 cycles ,      925 ns
+Average semaphore test time                                 :      55 cycles ,      347 ns
+Semaphore take time (context switch)                        :     948 cycles ,     5925 ns
+Semaphore give time (context switch)                        :    1753 cycles ,    10956 ns
+==> LatencyTest_Option2_240.txt <==
+Average semaphore signal time                               :     148 cycles ,      616 ns
+Average semaphore test time                                 :      55 cycles ,      233 ns
+Semaphore take time (context switch)                        :     948 cycles ,     3950 ns
+Semaphore give time (context switch)                        :    2067 cycles ,     8612 ns
+==> LatencyTest_Option2_80.txt <==
+Average semaphore signal time                               :     148 cycles ,     1850 ns
+Average semaphore test time                                 :      55 cycles ,      691 ns
+Semaphore take time (context switch)                        :     948 cycles ,    11850 ns
+Semaphore give time (context switch)                        :    1440 cycles ,    18000 ns
+
+==> LatencyTest_Option3_160.txt <==
+Average semaphore signal time                               :     135 cycles ,      843 ns
+Average semaphore test time                                 :      55 cycles ,      347 ns
+Semaphore take time (context switch)                        :     755 cycles ,     4718 ns
+Semaphore give time (context switch)                        :    1428 cycles ,     8925 ns
+==> LatencyTest_Option3_240.txt <==
+Average semaphore signal time                               :     135 cycles ,      562 ns
+Average semaphore test time                                 :      55 cycles ,      233 ns
+Semaphore take time (context switch)                        :     755 cycles ,     3145 ns
+Semaphore give time (context switch)                        :    1742 cycles ,     7258 ns
+==> LatencyTest_Option3_80.txt <==
+Average semaphore signal time                               :     135 cycles ,     1687 ns
+Average semaphore test time                                 :      55 cycles ,      691 ns
+Semaphore take time (context switch)                        :     755 cycles ,     9437 ns
+Semaphore give time (context switch)                        :    1115 cycles ,    13937 ns
