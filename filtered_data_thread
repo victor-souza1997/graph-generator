@@ -1,0 +1,54 @@
+==> LatencyTest_Option1_160.txt <==
+Time to create a thread (without start)                     :    2203 cycles ,    13768 ns
+Time to start a thread                                      :    1187 cycles ,     7418 ns
+Time to suspend a thread                                    :     724 cycles ,     4525 ns
+Time to resume a thread                                     :     681 cycles ,     4256 ns
+Time to abort a thread (not running)                        :     709 cycles ,     4431 ns
+==> LatencyTest_Option1_240.txt <==
+Time to create a thread (without start)                     :    3160 cycles ,    13166 ns
+Time to start a thread                                      :    1499 cycles ,     6245 ns
+Time to suspend a thread                                    :     724 cycles ,     3016 ns
+Time to resume a thread                                     :     681 cycles ,     2837 ns
+Time to abort a thread (not running)                        :    1021 cycles ,     4254 ns
+==> LatencyTest_Option1_80.txt <==
+Time to create a thread (without start)                     :    1252 cycles ,    15650 ns
+Time to start a thread                                      :     873 cycles ,    10912 ns
+Time to suspend a thread                                    :     724 cycles ,     9050 ns
+Time to resume a thread                                     :     681 cycles ,     8512 ns
+Time to abort a thread (not running)                        :     395 cycles ,     4937 ns
+==> LatencyTest_Option2_160.txt <==
+Time to create a thread (without start)                     :    2279 cycles ,    14243 ns
+Time to start a thread                                      :    1417 cycles ,     8856 ns
+Time to suspend a thread                                    :     914 cycles ,     5712 ns
+Time to resume a thread                                     :     889 cycles ,     5556 ns
+Time to abort a thread (not running)                        :     709 cycles ,     4431 ns
+==> LatencyTest_Option2_240.txt <==
+Time to create a thread (without start)                     :    3236 cycles ,    13483 ns
+Time to start a thread                                      :    1730 cycles ,     7208 ns
+Time to suspend a thread                                    :     914 cycles ,     3808 ns
+Time to resume a thread                                     :     889 cycles ,     3704 ns
+Time to abort a thread (not running)                        :    1021 cycles ,     4254 ns
+==> LatencyTest_Option2_80.txt <==
+Time to create a thread (without start)                     :    1328 cycles ,    16600 ns
+Time to start a thread                                      :    1103 cycles ,    13787 ns
+Time to suspend a thread                                    :     914 cycles ,    11425 ns
+Time to resume a thread                                     :     889 cycles ,    11112 ns
+Time to abort a thread (not running)                        :     395 cycles ,     4937 ns
+==> LatencyTest_Option3_160.txt <==
+Time to create a thread (without start)                     :    2203 cycles ,    13768 ns
+Time to start a thread                                      :    1189 cycles ,     7431 ns
+Time to suspend a thread                                    :     761 cycles ,     4756 ns
+Time to resume a thread                                     :     724 cycles ,     4525 ns
+Time to abort a thread (not running)                        :     710 cycles ,     4437 ns
+==> LatencyTest_Option3_240.txt <==
+Time to create a thread (without start)                     :    3160 cycles ,    13166 ns
+Time to start a thread                                      :    1502 cycles ,     6258 ns
+Time to suspend a thread                                    :     761 cycles ,     3170 ns
+Time to resume a thread                                     :     724 cycles ,     3016 ns
+Time to abort a thread (not running)                        :    1022 cycles ,     4258 ns
+==> LatencyTest_Option3_80.txt <==
+Time to create a thread (without start)                     :    1252 cycles ,    15650 ns
+Time to start a thread                                      :     876 cycles ,    10950 ns
+Time to suspend a thread                                    :     761 cycles ,     9512 ns
+Time to resume a thread                                     :     724 cycles ,     9050 ns
+Time to abort a thread (not running)                        :     396 cycles ,     4950 ns

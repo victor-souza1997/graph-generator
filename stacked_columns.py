@@ -2,41 +2,45 @@ import pandas as pd
 import matplotlib.pyplot as mp
 import numpy as np
 
-mp.rcParams.update({'font.size': 15}) # must set in top
+mp.rcParams.update({'font.size': 8}) # must set in top
 
 # data to be plotted
-"""
-["Average Semaphore\nSignal Time (Group 1)", 135, 135, 135],
-        ["Average Semaphore\nSignal Time (Group 2)", 148, 148, 148],
-        ["Average Semaphore\nSignal Time (Group 3)", 135, 135, 135],
-        
-        ["Average Semaphore\nTest Time (Group 1)", 55, 55, 55],
-        ["Average Semaphore\nTest Time (Group 2)", 55, 55, 55],
-        ["Average Semaphore\nTest Time (Group 3)", 55, 55, 55],
-"""
+
 
 data = [
+    ["Time to create\na thread\n(SLL)", 3160, 2203, 1252],
+    ["Time to create\na thread\n(RBT)", 3236, 2279, 1328],
+    ["Time to create\na thread\n(TQM)", 3160, 2203, 1252],
 
-        ["Semaphore Take\nTime (Group 1)", 720, 720, 720],
-        ["Semaphore Take\nTime (Group 2)", 948, 948, 948],
-        ["Semaphore Take\nTime (Group 3)", 755, 755, 755],
+    ["Time to start\na thread\n(SLL)", 1499, 1187, 873],
+    ["Time to start\na thread\n(RBT)", 1730, 1417, 1103],
+    ["Time to start\na thread\n(TQM)", 1502, 1189, 876],
+
+    ["Time to suspend\na thread\n(SLL)", 724, 724, 724],
+    ["Time to suspend\na thread\n(RBT)", 914, 914, 914],
+    ["Time to suspend\na thread\n(TQM)", 761, 761, 761],
+
+    ["Time to resume\na thread\n(SLL)", 681, 681, 681],
+    ["Time to resume\na thread\n(RBT)", 889, 889, 889],
+    ["Time to resume\na thread\n(TQM)", 724, 724, 724],
+    
+    ["Time to abort\na thread\n(SLL)", 709, 709, 395],
+    ["Time to abort\na thread\n(RBT)", 1021, 709, 1021],
+    ["Time to abort\na thread\n(TQM)", 1022, 710, 396]
+]
 
 
-        ["Semaphore Give\nTime (Group 1)", 1739, 1425, 1112],
-        ["Semaphore Give\nTime (Group 2)", 2067, 1440, 1753],
-        ["Semaphore Give\nTime (Group 3)", 1742, 1428, 1115]]
- 
 # form dataframe from data
-df = pd.DataFrame(data, columns=["Benchmarks Divided by Group", 
+df = pd.DataFrame(data, columns=["", 
                                  "CPU 240 Mhz", 
                                  "CPU 160 Mhz",
                                  "CPU 80 Mhz",
                                 ])
  
 # plot multiple columns such as population and year from dataframe
-df.plot(x="Benchmarks Divided by Group", y=["CPU 240 Mhz", "CPU 160 Mhz", "CPU 80 Mhz"],
-        kind="bar", figsize=(10, 10), rot =0, yticks=np.arange(0, 2100, 100))
+df.plot(x="", y=["CPU 240 Mhz", "CPU 160 Mhz", "CPU 80 Mhz"],
+        kind="bar", figsize=(10, 1), rot =0, yticks=np.arange(0, 3750, 200))
 mp.ylabel("Clock Cycles")
-
+mp.tight_layout()
 # display plot
 mp.show()
