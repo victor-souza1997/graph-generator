@@ -10,6 +10,7 @@ Average context switch time between threads (coop)          :     569 cycles ,  
 Timing results: Clock frequency: 80 MHz
 Average thread context switch using yield                   :     531 cycles ,     6638 ns
 Average context switch time between threads (coop)          :     569 cycles ,     7118 ns
+
 ==> LatencyTest_Option2_160.txt <==
 Timing results: Clock frequency: 160 MHz
 Average thread context switch using yield                   :     836 cycles ,     5228 ns
@@ -22,6 +23,7 @@ Average context switch time between threads (coop)          :    1280 cycles ,  
 Timing results: Clock frequency: 80 MHz
 Average thread context switch using yield                   :     836 cycles ,    10452 ns
 Average context switch time between threads (coop)          :    1280 cycles ,    16005 ns
+
 ==> LatencyTest_Option3_160.txt <==
 Timing results: Clock frequency: 160 MHz
 Average thread context switch using yield                   :     544 cycles ,     3402 ns
@@ -34,30 +36,3 @@ Average context switch time between threads (coop)          :     565 cycles ,  
 Timing results: Clock frequency: 80 MHz
 Average thread context switch using yield                   :     544 cycles ,     6801 ns
 Average context switch time between threads (coop)          :     565 cycles ,     7068 ns
-==> LatencyTest_Option1_160.txt <==
-Switch from ISR back to interrupted thread                  :     830 cycles ,     5187 ns
-Time from ISR to executing a different thread               :     451 cycles ,     2818 ns
-==> LatencyTest_Option1_240.txt <==
-Switch from ISR back to interrupted thread                  :    1144 cycles ,     4766 ns
-Time from ISR to executing a different thread               :     451 cycles ,     1879 ns
-==> LatencyTest_Option1_80.txt <==
-Switch from ISR back to interrupted thread                  :     516 cycles ,     6450 ns
-Time from ISR to executing a different thread               :     451 cycles ,     5637 ns
-==> LatencyTest_Option2_160.txt <==
-Switch from ISR back to interrupted thread                  :     830 cycles ,     5187 ns
-Time from ISR to executing a different thread               :     451 cycles ,     2818 ns
-==> LatencyTest_Option2_240.txt <==
-Switch from ISR back to interrupted thread                  :    1144 cycles ,     4766 ns
-Time from ISR to executing a different thread               :     451 cycles ,     1879 ns
-==> LatencyTest_Option2_80.txt <==
-Switch from ISR back to interrupted thread                  :     516 cycles ,     6450 ns
-Time from ISR to executing a different thread               :     451 cycles ,     5637 ns
-==> LatencyTest_Option3_160.txt <==
-Switch from ISR back to interrupted thread                  :     830 cycles ,     5187 ns
-Time from ISR to executing a different thread               :     451 cycles ,     2818 ns
-==> LatencyTest_Option3_240.txt <==
-Switch from ISR back to interrupted thread                  :    1144 cycles ,     4766 ns
-Time from ISR to executing a different thread               :     451 cycles ,     1879 ns
-==> LatencyTest_Option3_80.txt <==
-Switch from ISR back to interrupted thread                  :     516 cycles ,     6450 ns
-Time from ISR to executing a different thread               :     451 cycles ,     5637 ns
