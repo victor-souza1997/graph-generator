@@ -24,6 +24,7 @@ df = pd.DataFrame(data, columns=["",
 # plot multiple columns such as population and year from dataframe
 df.plot(x="", y=["CPU 240 Mhz", "CPU 160 Mhz", "CPU 80 Mhz"],  yticks=np.arange(0, 17005, 2000),
         kind="bar", figsize=(10, 10), rot =0,  color=["#77b41f", "#b41f2d", "#1fb4a7"],width=0.5)
+mp.ylabel("Time (ns)")
 mp.tight_layout()
 mp.ylim(0, 17005)
 ax = mp.gca()
