@@ -1,0 +1,6 @@
+Estados,Simple linked-list,Red/black tree,Multi-queue
+Unpend time ,264,365,274
+Ready time ,361,592,356
+Switch time ,884,1178,880
+Pend time ,945,1045,968
+Total time ,2454,3180,2478
