@@ -57,4 +57,8 @@ adicionar_valores(barras2)
 adicionar_valores(barras3)
 
 
+plt.ylim(0, 3400)
+plt.ylabel("Clock Cycles")
+plt.tight_layout()
+
 plt.show()
