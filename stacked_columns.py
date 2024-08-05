@@ -17,8 +17,13 @@ df = pd.DataFrame(data, columns=["Benchmark",
                                 ])
  
 # plot multiple columns such as population and year from dataframe
-df.plot(x="Benchmark", y=["240 Mhz", "160 Mhz", "80 Mhz"],
+ax = df.plot(x="Benchmark", y=["240 Mhz", "160 Mhz", "80 Mhz"],
         kind="bar", figsize=(10, 10), rot =0)
+
+# Annotate bars with their values
+for c in ax.containers:
+    ax.bar_label(c, label_type='edge', padding=3)
+
 
 # display plot
 mp.show()

@@ -32,10 +32,16 @@ ax.set_xticklabels(df["Benchmark"], rotation=0)
 
 ax.set_yticks(np.arange(0, 17005, 2000))
 ax.set_ylim(0, 17005)
+# Annotate bars with their values
+for c in ax.containers:
+    ax.bar_label(c, label_type='edge', padding=3)
+
 
 ax.legend()
 ax.set_ylabel("Time (ns)")
+
 mp.tight_layout()
+
 
 # Display plot
 mp.show()
