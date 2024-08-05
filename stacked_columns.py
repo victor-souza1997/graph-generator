@@ -20,10 +20,15 @@ df = pd.DataFrame(data, columns=["",
  
 
 # plot multiple columns such as population and year from dataframe
-df.plot(x="", y=["CPU 240 Mhz", "CPU 160 Mhz", "CPU 80 Mhz"],
+ax = df.plot(x="", y=["CPU 240 Mhz", "CPU 160 Mhz", "CPU 80 Mhz"],
         kind="bar", figsize=(6, 6), rot =0, yticks=np.arange(0, 1200, 100),
         color=["#77b41f", "#b41f2d", "#1fb4a7"],width=0.8)
 mp.ylabel("Clock Cycles")
+
+# Annotate bars with their values
+for c in ax.containers:
+    ax.bar_label(c, label_type='edge', padding=3)
+
 
 mp.tight_layout()
 mp.ylim(0, 1200)
