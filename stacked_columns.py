@@ -17,7 +17,7 @@ mp.rcParams.update({'font.size': 15}) # must set in top
 
 data = [
 
-        ["Semaphore\nTake Time\n(SSL)", 720, 720, 720],
+        ["Semaphore\nTake Time\n(SLL)", 720, 720, 720],
         ["Semaphore\nTake Time\n(RBT)", 948, 948, 948],
         ["Semaphore\nTake Time\n(TQM)", 755, 755, 755],
 
