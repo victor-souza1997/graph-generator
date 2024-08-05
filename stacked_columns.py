@@ -10,7 +10,7 @@ data = [
     ["Semaphore\nTake Time\n(RBT)", 948, 948, 948],
     ["Semaphore\nTake Time\n(TQM)", 755, 755, 755],
     ["Semaphore\nGive Time\n(SLL)", 1739, 1425, 1112],
-    ["Semaphore\nGive Time\n(RBT)", 2067, 1440, 1753],
+    ["Semaphore\nGive Time\n(RBT)", 2067, 1753, 1440],
     ["Semaphore\nGive Time\n(TQM)", 1742, 1428, 1115]
 ]
 
