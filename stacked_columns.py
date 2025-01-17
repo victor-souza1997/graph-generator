@@ -1,6 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as mp
  
+
+mp.rcParams.update({'font.size': 13}) # must set in top
 # data to be plotted
 data = [["Average thread context \nswitch using \nyield (group 1)", 531, 531, 531],
         ["Average thread context \nswitch using \nyield  (group 2)", 836, 836, 836],
@@ -17,8 +19,16 @@ df = pd.DataFrame(data, columns=["Benchmark",
                                 ])
  
 # plot multiple columns such as population and year from dataframe
+<<<<<<< HEAD
 ax = df.plot(x="Benchmark", y=["240 Mhz", "160 Mhz", "80 Mhz"],
         kind="bar", figsize=(10, 10), rot =0)
+=======
+mp.ylim(0, 3400)
+mp.ylabel("Clock Cycles")
+mp.tight_layout()
+df.plot(x="Benchmark", y=["240 Mhz", "160 Mhz", "80 Mhz"],
+        kind="bar", figsize=(10, 1.8), rot =0, yticks=np.arange(0, 3750, 100))
+>>>>>>> 1b552990ac36d4543f64c917b2d24779cc99617c
 
 # Annotate bars with their values
 for c in ax.containers:
